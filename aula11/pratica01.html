@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica 01</title>
+    <style>
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>De qual País você é ? </h1>
+    <label for="txt">Qual país você mora:</label>
+    <input type="text" name="txt" id="txt"> <br>
+    <input type="button" value="Enviar" onclick="enviar()" >
+    <div id="res">
+
+    </div>
+    <script>
+        function enviar() {
+            let txtjs = window.document.getElementById('txt')
+            let resjs = window.document.getElementById('res')
+            let pais = 'China'
+            if(pais == 'Brasil') {
+                resjs.innerText = `Você é Brasileiro`
+            }else {
+                resjs.innerText = `Você é Estrangeiro`
+            } 
+        }
+    </script>
+
+</body>
+</html>
