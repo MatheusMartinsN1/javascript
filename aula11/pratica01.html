@@ -12,9 +12,12 @@
 </head>
 <body>
     <h1>De qual País você é ? </h1>
-    <label for="txt">Qual país você mora:</label>
-    <input type="text" name="txt" id="txt"> <br>
-    <input type="button" value="Enviar" onclick="enviar()" >
+    <form>
+        <label for="txt">Qual país você mora:</label>
+        <input type="text" name="txt" id="txt"> <br>
+        <input type="button" value="Enviar" onclick="enviar()" >
+        <input type="reset" value="Limpar">
+    </form>
     <div id="res">
 
     </div>
@@ -24,7 +27,7 @@
             let resjs = window.document.getElementById('res')
             let pais = 'China'
             if(pais == 'Brasil') {
-                resjs.innerText = `Você é Brasileiro`
+                resjs.innerHTML= `Você é Brasileiro`
             }else {
                 resjs.innerText = `Você é Estrangeiro`
             } 
