@@ -24,7 +24,6 @@ section {
 
 select#lista {
     width: 150px;
-    height: 75px;
     margin-top: 15px;
 }
 
@@ -35,4 +34,8 @@ input#bfim {
 footer {
     text-align: center;
     padding-top: 20px;
+}
+
+p {
+    padding: 10px;
 }
